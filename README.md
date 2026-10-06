@@ -33,6 +33,17 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 
 ---
 
+## 📊 Security Research Portfolio
+
+| # | Research / Contribution | Status | Publication |
+|---|---|---|---|
+| 01 | Clickjacking — RepAutomate | Publicly acknowledged | [Technical write-up](bug-bounty/writeups/01-clickjacking-repautomate.md) |
+| 02 | Clickjacking & Scope Validation | Out of Scope — confidential target | [Sanitized research lesson](bug-bounty/writeups/02-clickjacking-scope-validation.md) |
+
+> Confidential bug-bounty submissions are represented only through sanitized lessons when public disclosure is not permitted.
+
+---
+
 ## 🔐 Security Focus
 
 - Web Application Penetration Testing
@@ -186,7 +197,8 @@ mukesh-vapt/
 │   ├── methodology.md
 │   ├── writeup-template.md
 │   └── writeups/
-│       └── 01-clickjacking-repautomate.md
+│       ├── 01-clickjacking-repautomate.md
+│       └── 02-clickjacking-scope-validation.md
 │
 └── README.md
 ```
