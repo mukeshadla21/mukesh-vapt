@@ -39,8 +39,11 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 |---|---|---|---|
 | 01 | Clickjacking — RepAutomate | Publicly acknowledged | [Technical write-up](bug-bounty/writeups/01-clickjacking-repautomate.md) |
 | 02 | Clickjacking & Scope Validation | Out of Scope — confidential target | [Sanitized research lesson](bug-bounty/writeups/02-clickjacking-scope-validation.md) |
+| 03 | Verbose GraphQL Error Disclosure | Informational (P5) — confidential | [Sanitized write-up](bug-bounty/writeups/03-graphql-error-disclosure-lesson.md) |
+| 04 | OAuth Client Identifier / API Authorization | Duplicate / Not Applicable | [Finding #4](bug-bounty/writeups/04-oauth-client-identifier-authentication-lesson.md) |
+| 05 | CORS Application Configuration Disclosure | Low — responsible disclosure | [Finding #5](bug-bounty/writeups/05-cors-application-configuration-disclosure.md) |
 
-> Confidential bug-bounty submissions are represented only through sanitized lessons when public disclosure is not permitted.
+> Confidential bug-bounty submissions are represented only through sanitized write-ups when public disclosure is not permitted.
 
 ---
 
@@ -198,7 +201,10 @@ mukesh-vapt/
 │   ├── writeup-template.md
 │   └── writeups/
 │       ├── 01-clickjacking-repautomate.md
-│       └── 02-clickjacking-scope-validation.md
+│       ├── 02-clickjacking-scope-validation.md
+│       ├── 03-graphql-error-disclosure-lesson.md
+│       ├── 04-oauth-client-identifier-authentication-lesson.md
+│       └── 05-cors-application-configuration-disclosure.md
 │
 └── README.md
 ```
