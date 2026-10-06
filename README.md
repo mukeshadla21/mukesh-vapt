@@ -56,6 +56,7 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 | 17 | TOCTOU Race — ouroboros-consensus Node Crash | High — CWE-367 / CVSS 7.5 | [Finding #17](bug-bounty/writeups/17-ouroboros-consensus-toctou-copytoimmutabledb-node-crash.md) |
 | 18 | Authenticated FILTER SIEVE SCRIPT Worker Crash — Dovecot | Informative — worker-level crash | [Finding #18](bug-bounty/writeups/18-dovecot-filter-sieve-script-worker-crash.md) |
 | 19 | doveadm HTTP API uint32 Validation Crash — Dovecot | Informative — worker-level crash | [Finding #19](bug-bounty/writeups/19-dovecot-doveadm-uint32-validation-worker-crash.md) |
+| 20 | Unauthenticated Stats Service Crash — Dovecot | Remote crash / telemetry loss | [Finding #20](bug-bounty/writeups/20-dovecot-stats-unauthenticated-malformed-chunked-crash.md) |
 
 > Findings are documented according to their actual disclosure or program outcome. Confidential submissions are sanitized and private credentials or sensitive evidence are not published.
 
