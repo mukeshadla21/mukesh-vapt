@@ -55,6 +55,7 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 | 16 | Unbounded Request Body — cardano-submit-api DoS | High — CVSS 7.5 | [Finding #16](bug-bounty/writeups/16-cardano-submit-api-unbounded-request-body-dos.md) |
 | 17 | TOCTOU Race — ouroboros-consensus Node Crash | High — CWE-367 / CVSS 7.5 | [Finding #17](bug-bounty/writeups/17-ouroboros-consensus-toctou-copytoimmutabledb-node-crash.md) |
 | 18 | Authenticated FILTER SIEVE SCRIPT Worker Crash — Dovecot | Informative — worker-level crash | [Finding #18](bug-bounty/writeups/18-dovecot-filter-sieve-script-worker-crash.md) |
+| 19 | doveadm HTTP API uint32 Validation Crash — Dovecot | Informative — worker-level crash | [Finding #19](bug-bounty/writeups/19-dovecot-doveadm-uint32-validation-worker-crash.md) |
 
 > Findings are documented according to their actual disclosure or program outcome. Confidential submissions are sanitized and private credentials or sensitive evidence are not published.
 
