@@ -38,12 +38,18 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 | # | Research / Contribution | Status | Publication |
 |---|---|---|---|
 | 01 | Clickjacking — RepAutomate | Publicly acknowledged | [Technical write-up](bug-bounty/writeups/01-clickjacking-repautomate.md) |
-| 02 | Clickjacking & Scope Validation | Out of Scope — confidential target | [Sanitized research lesson](bug-bounty/writeups/02-clickjacking-scope-validation.md) |
-| 03 | Verbose GraphQL Error Disclosure | Informational (P5) — confidential | [Sanitized write-up](bug-bounty/writeups/03-graphql-error-disclosure-lesson.md) |
+| 02 | Clickjacking & Scope Validation | Out of Scope — confidential target | [Finding #2](bug-bounty/writeups/02-clickjacking-scope-validation.md) |
+| 03 | Verbose GraphQL Error Disclosure | Informational (P5) — confidential | [Finding #3](bug-bounty/writeups/03-graphql-error-disclosure-lesson.md) |
 | 04 | OAuth Client Identifier / API Authorization | Duplicate / Not Applicable | [Finding #4](bug-bounty/writeups/04-oauth-client-identifier-authentication-lesson.md) |
 | 05 | CORS Application Configuration Disclosure | Low — responsible disclosure | [Finding #5](bug-bounty/writeups/05-cors-application-configuration-disclosure.md) |
+| 06 | MCP Token Creation / Plan Entitlement | Entitlement inconsistency | [Finding #6](bug-bounty/writeups/06-mcp-token-entitlement.md) |
+| 07 | Insufficient Authentication Rate Limiting | CWE-307 — responsible disclosure | [Finding #7](bug-bounty/writeups/07-login-rate-limiting-cwe-307.md) |
+| 08 | Public Password Policy Configuration | Low — responsible disclosure | [Finding #8](bug-bounty/writeups/08-nucleus-password-policy-disclosure.md) |
+| 09 | Public Management Server Status | Low — responsible disclosure | [Finding #9](bug-bounty/writeups/09-nucleus-server-status-disclosure.md) |
+| 10 | Weak Content Security Policy | Informational — responsible disclosure | [Finding #10](bug-bounty/writeups/10-nucleus-csp-misconfiguration.md) |
+| 11 | Hardcoded Third-Party API Key | Duplicate | [Finding #11](bug-bounty/writeups/11-alaan-hardcoded-api-key.md) |
 
-> Confidential bug-bounty submissions are represented only through sanitized write-ups when public disclosure is not permitted.
+> Findings are documented according to their actual disclosure or program outcome. Confidential submissions are sanitized and private credentials or sensitive evidence are not published.
 
 ---
 
@@ -204,7 +210,13 @@ mukesh-vapt/
 │       ├── 02-clickjacking-scope-validation.md
 │       ├── 03-graphql-error-disclosure-lesson.md
 │       ├── 04-oauth-client-identifier-authentication-lesson.md
-│       └── 05-cors-application-configuration-disclosure.md
+│       ├── 05-cors-application-configuration-disclosure.md
+│       ├── 06-mcp-token-entitlement.md
+│       ├── 07-login-rate-limiting-cwe-307.md
+│       ├── 08-nucleus-password-policy-disclosure.md
+│       ├── 09-nucleus-server-status-disclosure.md
+│       ├── 10-nucleus-csp-misconfiguration.md
+│       └── 11-alaan-hardcoded-api-key.md
 │
 └── README.md
 ```
@@ -213,7 +225,7 @@ mukesh-vapt/
 
 ## 📚 What You Will Find Here
 
-This repository will contain:
+This repository contains:
 
 - VAPT checklists
 - Testing methodologies
