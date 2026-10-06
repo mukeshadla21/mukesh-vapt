@@ -60,6 +60,7 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 | 21 | Vercel Sandbox Privilege Boundary Escalation | Not Applicable — out of scope | [Finding #21](bug-bounty/writeups/21-vercel-sandbox-proc1-mem-auth-bypass-root.md) |
 | 22 | Unauthenticated OpenTelemetry Telemetry Injection — Crypto.com | Duplicate (#3592648) | [Finding #22](bug-bounty/writeups/22-crypto-com-unauthenticated-otel-telemetry-injection.md) |
 | 23 | Public Firebase Storage Bucket — Unico IDtech | Duplicate (#3515437) / Informative | [Finding #23](bug-bounty/writeups/23-unico-public-firebase-storage-enumeration-download.md) |
+| 24 | Production Authentication Origin Directly Reachable Outside Cloudflare — Banco Plata | Duplicate (#3620121) / Informative | [Finding #24](bug-bounty/writeups/24-banco-plata-cloudflare-origin-auth-exposure.md) |
 
 > Findings are documented according to their actual disclosure or program outcome. Confidential submissions are sanitized and private credentials or sensitive evidence are not published.
 
