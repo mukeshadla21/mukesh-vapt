@@ -49,6 +49,7 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 | 10 | Weak Content Security Policy | Informational — responsible disclosure | [Finding #10](bug-bounty/writeups/10-nucleus-csp-misconfiguration.md) |
 | 11 | Hardcoded Third-Party API Key | Duplicate | [Finding #11](bug-bounty/writeups/11-alaan-hardcoded-api-key.md) |
 | 12 | Unauthenticated Report Endpoint / Operational Data Exposure | Responsible disclosure | [Finding #12](bug-bounty/writeups/12-unauthenticated-report-operational-data.md) |
+| 13 | Weak Password Policy / Low-Entropy Password Acceptance | Low / Informational | [Finding #13](bug-bounty/writeups/13-weak-password-policy-low-entropy.md) |
 
 > Findings are documented according to their actual disclosure or program outcome. Confidential submissions are sanitized and private credentials or sensitive evidence are not published.
 
@@ -218,7 +219,8 @@ mukesh-vapt/
 │       ├── 09-nucleus-server-status-disclosure.md
 │       ├── 10-nucleus-csp-misconfiguration.md
 │       ├── 11-alaan-hardcoded-api-key.md
-│       └── 12-unauthenticated-report-operational-data.md
+│       ├── 12-unauthenticated-report-operational-data.md
+│       └── 13-weak-password-policy-low-entropy.md
 │
 └── README.md
 ```
