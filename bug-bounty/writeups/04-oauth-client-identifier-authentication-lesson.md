@@ -1,68 +1,78 @@
-# Security Research Lesson #4 — Public OAuth Client Identifiers and Authorization Boundaries
+# Finding #4 — OAuth Client Identifier Accepted Without User Authentication
 
-## Topic
+## 🐞 Bug Found on Bugcrowd
 
-**API authorization testing: public OAuth client identifiers vs. user authentication**
+**Program:** Moneytree KK  
+**Area:** API Security  
+**Type:** Authentication / Authorization  
+**Status:** Duplicate / Not Applicable
 
-## Research Context
+## What I Found
 
-During authorized API security research against a managed bug bounty program, I identified an API endpoint where a publicly available OAuth client identifier was sufficient to obtain a dataset without a user Bearer token.
+I found an API endpoint that could be accessed without logging in as a user.
 
-The submission was ultimately marked **Not Applicable / Duplicate**. The program linked it to an earlier P1 report covering the broader authentication-bypass issue.
+The endpoint normally rejected requests without authentication. However, when I supplied the application's **public OAuth client identifier** in the `x-api-key` header, the request was accepted.
+
+In simple terms:
+
+> The API was accepting a public client identifier instead of requiring a user-authenticated session.
+
+## What I Tested
+
+| Test | Result |
+|---|---|
+| No authentication | HTTP 401 |
+| Valid public client identifier | HTTP 200 |
+| Invalid client identifier | HTTP 401 |
+| Normal application flow | User authentication required |
+
+The successful request returned financial institution information.
+
+## Why This Is a Security Finding
+
+An OAuth **client identifier** identifies an application. It does not prove that a user is authenticated.
+
+The behavior I observed was:
+
+```text
+Public Client ID
+      ↓
+API accepts request
+      ↓
+No user session / Bearer token
+      ↓
+Data returned
+```
+
+## Impact
+
+The endpoint could be accessed without a user-authenticated session when the public client identifier was supplied.
+
+The returned information was institution metadata rather than customer-specific information, so the direct impact of this particular endpoint was limited.
+
+## Bugcrowd Result
+
+The submission was marked **Duplicate / Not Applicable**.
+
+Bugcrowd identified it as overlapping with an earlier authentication-bypass report involving hardcoded OAuth client credentials.
+
+The program also noted that the exposed institution information was not considered sensitive on its own.
 
 ## What I Learned
 
-A public OAuth client identifier should not automatically be treated as proof of user authentication.
+This finding strengthened my API security testing experience:
 
-When assessing API authorization, distinguish between:
+- A public OAuth client ID is **not the same as a user access token**.
+- Test APIs with and without authentication.
+- Check what each authentication header actually proves.
+- Compare related authenticated and unauthenticated endpoints.
+- Always investigate the sensitivity and real-world impact of returned data.
+- A duplicate finding is still useful practical research experience.
 
-- **Client identification** — identifying which application/client is making a request.
-- **User authentication** — proving the identity of a user.
-- **Authorization** — determining what the authenticated principal is allowed to access.
+## Simple Security Principle
 
-A client identifier embedded in a public application may be intentionally exposed. Its presence alone should therefore not be considered a secret credential.
+> **A client ID identifies the application. A user access token authenticates the user. An API should enforce the correct authorization boundary.**
 
-## API Testing Approach
+### Responsible Disclosure
 
-For an endpoint that appears to require authentication, compare controlled requests such as:
-
-| Test | Security Question |
-|---|---|
-| No authentication | Is the endpoint publicly accessible? |
-| Public client identifier only | Is client identification being treated as authentication? |
-| Invalid client identifier | Is the client identifier actually validated? |
-| Valid user access token | What does the intended authenticated flow look like? |
-| Different user/session context | Is authorization enforced consistently? |
-
-The objective is to determine whether the server is enforcing the correct **authentication and authorization boundary**, not merely whether a header is required.
-
-## Important Bug Bounty Lesson
-
-This submission was marked duplicate because another researcher had already reported the broader authentication-bypass condition.
-
-The program also noted that the institution metadata itself was not considered sensitive on its own and encouraged demonstrating how the weakness could be used to attack other services.
-
-This reinforced an important research principle:
-
-> **A technically interesting authentication difference is not necessarily a unique or rewardable vulnerability. Establish distinct impact and check for existing disclosures before treating it as a standalone finding.**
-
-## What I Would Improve in Future Testing
-
-1. Map the authentication boundary before reporting.
-2. Determine whether the exposed data is actually sensitive.
-3. Compare related authenticated and unauthenticated endpoints.
-4. Investigate whether the same authorization weakness affects more sensitive operations.
-5. Look for a distinct security impact rather than reporting only an authentication inconsistency.
-6. Check program scope and known disclosures where available.
-
-## Responsible Disclosure
-
-The original submission concerned a private bug bounty program. This repository intentionally does not publish the target URL, submission ID, client identifier, raw API responses, credentials, private evidence, or other program-specific sensitive details.
-
-This page documents the **general API security lesson and research methodology only**.
-
----
-
-### Research Principle
-
-> **Do not confuse client identification with user authentication — and do not stop at an authentication difference when the real objective is to prove security impact.**
+The original Bugcrowd engagement was private. This public portfolio entry does not disclose the exact target URL, client identifier, submission ID, credentials, or private evidence.
