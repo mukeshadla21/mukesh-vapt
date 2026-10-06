@@ -1,12 +1,35 @@
 # Mukesh VAPT
 
-> **Vulnerability Assessment & Penetration Testing | Web & API Security | Bug Bounty | Security Automation**
+> **Vulnerability Assessment & Penetration Testing | Web & API Security | Bug Bounty | Security Research**
 
 Welcome to my security research and penetration-testing portfolio.
 
-This repository documents my practical approach to **Vulnerability Assessment and Penetration Testing (VAPT)**, including reconnaissance, web application security, API security, vulnerability validation, security automation, and responsible disclosure.
+This repository documents my practical approach to **Vulnerability Assessment and Penetration Testing (VAPT)**, including reconnaissance, web application security, API security, vulnerability validation, security research, and responsible disclosure.
 
-The goal is to demonstrate **methodology and practical security thinking** rather than simply listing tools or commands.
+The goal is to demonstrate **practical security thinking, vulnerability validation, and responsible disclosure** rather than simply listing tools or commands.
+
+---
+
+## 🏆 Security Research Recognition
+
+### RepAutomate — Security Hall of Fame Researcher
+
+I was publicly recognized by **RepAutomate** as a security researcher in its **2026 Security Hall of Fame** for a responsible security contribution.
+
+**Recognition details:**
+
+- **Researcher:** Mukesh Adla
+- **Recognition:** 2026 Security Hall of Fame
+- **Date of contribution:** May 2026
+- **Contribution:** Clickjacking vulnerability
+- **Disclosure:** Responsibly reported to the security team
+- **Acknowledgement:** Public recognition granted by the organization
+
+🔗 **[View RepAutomate Security Hall of Fame](https://repautomate.co.za/security/hall-of-fame/)**
+
+📄 **[Read the technical write-up](bug-bounty/writeups/01-clickjacking-repautomate.md)**
+
+> This recognition demonstrates practical vulnerability research, responsible disclosure, and communication with a security team.
 
 ---
 
@@ -22,7 +45,7 @@ The goal is to demonstrate **methodology and practical security thinking** rathe
 - Mobile Application Security
 - Network Security
 - Bug Bounty Research
-- Security Automation
+- Security Research
 - Responsible Disclosure
 
 ---
@@ -161,10 +184,9 @@ mukesh-vapt/
 │
 ├── bug-bounty/
 │   ├── methodology.md
-│   └── writeup-template.md
-│
-├── automation/
-│   └── README.md
+│   ├── writeup-template.md
+│   └── writeups/
+│       └── 01-clickjacking-repautomate.md
 │
 └── README.md
 ```
@@ -178,10 +200,9 @@ This repository will contain:
 - VAPT checklists
 - Testing methodologies
 - Reconnaissance workflows
-- Vulnerability research
+- Verified vulnerability research
 - Sanitized security write-ups
 - API security testing techniques
-- Automation scripts
 - Lab exercises
 - False-positive analysis
 - Remediation guidance
@@ -217,4 +238,4 @@ The techniques and examples in this repository are provided for authorized secur
 
 ---
 
-### Security is not just finding vulnerabilities — it is proving impact, reducing risk, and communicating the fix.
+### 🔐 Security is not just finding vulnerabilities — it is proving impact, communicating risk, and helping organizations fix security issues.
