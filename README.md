@@ -53,6 +53,7 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 | 14 | Password Change Allows Current Password Reuse | Low / Informational | [Finding #14](bug-bounty/writeups/14-password-change-allows-current-password-reuse.md) |
 | 15 | Authenticated Blind SSRF — Domain Asset Verification | Medium — CWE-918 | [Finding #15](bug-bounty/writeups/15-authenticated-blind-ssrf-domain-asset-verification.md) |
 | 16 | Unbounded Request Body — cardano-submit-api DoS | High — CVSS 7.5 | [Finding #16](bug-bounty/writeups/16-cardano-submit-api-unbounded-request-body-dos.md) |
+| 17 | TOCTOU Race — ouroboros-consensus Node Crash | High — CWE-367 / CVSS 7.5 | [Finding #17](bug-bounty/writeups/17-ouroboros-consensus-toctou-copytoimmutabledb-node-crash.md) |
 
 > Findings are documented according to their actual disclosure or program outcome. Confidential submissions are sanitized and private credentials or sensitive evidence are not published.
 
