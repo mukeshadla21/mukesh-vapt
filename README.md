@@ -341,7 +341,7 @@ Nessus · Metasploit · Wireshark
 ```
 mukesh-vapt/
 │
-├── methodology/
+├── methodology/                                      # 1. VAPT methodology
 │   ├── vapt-methodology.md
 │   ├── web-application.md
 │   ├── api-security.md
@@ -356,7 +356,7 @@ mukesh-vapt/
 │   ├── jwt/
 │   └── request-smuggling/
 │
-├── bug-bounty/
+├── bug-bounty/                                       # 2. Bug bounty & security research
 │   ├── README.md
 │   ├── methodology.md
 │   ├── writeup-template.md
@@ -367,7 +367,13 @@ mukesh-vapt/
 └── README.md
 ```
 
-→ [Browse the complete research index](bug-bounty/README.md)
+### Repository Navigation
+
+**1️⃣ [Methodology](methodology/)** — VAPT methodology, web/API testing, reconnaissance, and security-testing workflows.
+
+**2️⃣ [Bug Bounty & Security Research](bug-bounty/)** — verified findings, sanitized write-ups, research index, and responsible-disclosure work.
+
+→ [Browse the complete Bug Bounty research index](bug-bounty/README.md)
 
 ---
 
