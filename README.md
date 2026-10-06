@@ -58,6 +58,7 @@ I was publicly recognized by **RepAutomate** as a security researcher in its **2
 | 19 | doveadm HTTP API uint32 Validation Crash — Dovecot | Informative — worker-level crash | [Finding #19](bug-bounty/writeups/19-dovecot-doveadm-uint32-validation-worker-crash.md) |
 | 20 | Unauthenticated Stats Service Crash — Dovecot | Remote crash / telemetry loss | [Finding #20](bug-bounty/writeups/20-dovecot-stats-unauthenticated-malformed-chunked-crash.md) |
 | 21 | Vercel Sandbox Privilege Boundary Escalation | Not Applicable — out of scope | [Finding #21](bug-bounty/writeups/21-vercel-sandbox-proc1-mem-auth-bypass-root.md) |
+| 22 | Unauthenticated OpenTelemetry Telemetry Injection — Crypto.com | Duplicate (#3592648) | [Finding #22](bug-bounty/writeups/22-crypto-com-unauthenticated-otel-telemetry-injection.md) |
 
 > Findings are documented according to their actual disclosure or program outcome. Confidential submissions are sanitized and private credentials or sensitive evidence are not published.
 
