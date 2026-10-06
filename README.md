@@ -229,33 +229,6 @@ I was publicly recognized by **RepAutomate** in its 2026 Security Hall of Fame f
 
 ---
 
-## 🎯 Interview / VAPT Capability Map
-
-| If you want to assess… | Strongest portfolio evidence |
-|---|---|
-| **API Security** | #4, #6, #7, #12, #15, #16, #19, #22 |
-| **Authentication & Authorization** | #4, #6, #7, #14, #25 |
-| **SSRF** | #15 — authenticated blind SSRF with server-side request validation |
-| **DoS / Availability** | #16, #17, #18, #19, #20 |
-| **Race Conditions / Concurrency** | #17 — TOCTOU analysis and deterministic reproduction |
-| **Cloud / Infrastructure Security** | #21, #23, #24 |
-| **Web Security** | #1, #2, #5, #10, #11 |
-| **Mobile Security** | #23 — Android APK and Firebase Storage exposure analysis |
-| **Source / Root-Cause Analysis** | #16, #17, #18, #19, #20, #25 |
-| **Business / Security Logic** | #6, #14, #25 |
-| **Responsible Disclosure** | All documented findings, with program outcomes preserved |
-| **Security Reporting** | Sanitized write-ups with reproduction, impact, limitations, and remediation |
-
-### What this means in practice
-
-The portfolio is designed to demonstrate that I can move beyond vulnerability identification:
-
-**Recon → Hypothesis → Manual validation → Root cause → Impact → Evidence → Risk assessment → Report → Remediation**
-
-That distinction is important in VAPT work: finding a suspicious response is only the beginning; the security value comes from proving what boundary failed and what an attacker can actually achieve.
-
----
-
 ## 🧪 How I Validate a Finding
 
 My testing workflow is designed to move from **observation → proof → impact**, rather than treating scanner output as a vulnerability by itself.
