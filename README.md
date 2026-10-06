@@ -49,19 +49,11 @@ The goal is to demonstrate **methodology and practical security thinking** rathe
 ### Mobile Security
 - MobSF
 - Frida
-- JADX
-- apktool
-- ADB
 
 ### Infrastructure & Security Testing
 - Nessus
 - Metasploit
 - Wireshark
-
-### Automation
-- Python
-- Bash
-- Java
 
 ---
 
